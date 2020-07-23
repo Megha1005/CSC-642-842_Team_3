@@ -119,7 +119,7 @@
                          <a href="#" title=""><img src="image\fastfood.png" class="rounded float-left" alt="logo" width= 80px height= 100% ></a> 
                     </div>
                     <div class="col-5 bg-light">
-                         <a href="#" title=""><img src="image\safetag.png" class="rounded float-left" alt="logo" width= 70px height= 100% ></a> 
+                         <img data-toggle="modal" data-target="#exampleModalCenter" src="image\safetag.png" class="rounded float-left" alt="logo" width= 70px height= 100% >
                     </div>
                 </div>
                 <br>
@@ -131,10 +131,34 @@
                 <!-- Nested  1-2 -->
                 <div class="row">
                     <div class="col-10 bg-light" style="flex-direction: row">
-                         <a href="#" title=""><img src="image\phe.png" class="rounded float-left" alt="logo" width= 380px height= 400px ></a>                 
+                         <a href="#" title=""><img src="image\phe.png" class="rounded float-left" alt="logo" width= 380px height= 400px ></a>
+                         <div style="position: absolute; bottom: 8px; left: 1px;">
+                             <img width="380px" src="image\checkCovid.png" alt="logo" data-toggle="modal" data-target="#exampleModalCenter">
+                         </div>
                          <a href="#" title=""><img src="image\phe1.png" class="rounded float-left" alt="logo" width= 380px height= 400px ></a>       
                     </div>
                     <br>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="text-right modal-title" id="exampleModalLongTitle">Covid-19 Safety</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                           <div> Restaurant A considers various different parameters for Safety.  </div>
+                           <div> The Restaurant has compulsory mask and gloves for all the working staff. </div>
+                           <div>It has daily temperature checks of all the staff members at 9 a.m</div>
+                          </div>
+                          <div class="modal-footer">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
                 </div>
              </div>
              <hr>         
