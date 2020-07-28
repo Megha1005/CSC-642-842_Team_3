@@ -26,7 +26,44 @@
                 <!-- Nested  1-2 -->
                 <div class="row">
                     <div class="col-10 bg-light text-right">
-                        <button type="button" onclick="document.location='about.html'" class="btn btn-success">About us</button>
+                                                <!--Modal Window Button-->
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">About Us</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true">
+                          <div class="vertical-alignment-helper"> 
+                              <div class="modal-dialog vertical-align-center" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">About Us</h5>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container" style="text-align: center">
+                                        This static website was created by Team 3. Megha Babariya, Zhiming Wu, Mantasha Khan, Alex Gao, and Kevin Chan.
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      &copy;Team 3 of CSC-642 Summer 2020
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <style>
+                            
+                            .vertical-alignment-helper {
+                                display:table;
+                                height: 100%;
+                                width: 75%;
+                                margin-left: 12%;
+                                pointer-events:none;}
+
+                                .vertical-align-center {
+                                /* To center vertically */
+                                display: table-cell;
+                                vertical-align: middle;
+                                pointer-events:none;}
+                        </style>
                         <a type="button" href="ownerlogin.html" class="btn btn-success">For Restaurant Owners</a>           
                     </div>
                     <div class="col-2-auto bg-light text-right" style="flex-direction: row">
