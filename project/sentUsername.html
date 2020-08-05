@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/style.css">
-  <title>Miguel's Bakery</title>
+  <title>Sent Username</title>
 </head>
 
 <body>
@@ -50,12 +50,16 @@
 
           <li class="nav-item">
             <!-- <a href="services.html" class="nav-link">Services</a> -->
-            <a href="venderhome.html">
+            <a href="ownerlogin.html">
               <button type="button" class="btn btn-light m-1">For Restaurant Owners</button>
             </a>
           </li>
           <li class="nav-item">
-            <button type="button" onclick="document.location='index.html'" class="btn btn-light m-1">Logout</button>
+            <button type="button" onclick="document.location='signup.html'" class="btn btn-light m-1">Sign up</button>
+          </li>
+          <li class="nav-item active">
+            <!-- <a href="contact.html" class="nav-link">Contact</a> -->
+            <button type="button" onclick="document.location='login.html'" class="btn btn-light m-1">Sign in</button>
           </li>
         </ul>
       </div>
@@ -63,74 +67,60 @@
   </nav>
 
   <section id="main" class="py-5">
-  <div class="container" style="padding-top: 25px; width: 65%; height: 75%">
-    <div class="row">
-      <div class="panel panel-primary col-md-12">
-        <div class="panel-heading text-center">
-          <h3>Miguel's Bakery</h3>
-        </div>
-        <div class="panel-body">
-          <div class="form-group">
-            <label>
-              Upcoming Orders:
-            </label>
-            <div width=100% class="card">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-              </ul>
-            </div>
+    <div class="container col-md-5" align="center">
+      <div class="row row2" style="padding-bottom:25px">
+        <div class="col-md-3"></div>
+        <div class="panel panel-primary col-md-6">
+          <div class="panel-heading text-center">
+            <h3>Username Sent!</h3>
           </div>
-          <a class="btn btn-primary" href="editrestaurantinfo.html">Edit Restaurant Info</a>
-          <div class="form-group">
-            <label>
-              Past Orders:
-            </label>
-            <div width=100% class="card">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
-              </ul>
-            </div>
+          <div class="panel-secondary">
+
           </div>
-          <br>
+          <div class="panel-body text-center" style="background:#F2F2F2">
+            <br><br>
+            <form action="index.html">
+              <div>
+                <h5>Please check your Email Address for your username.</h5>
+              </div>
+              <br>
+
+              <div class="form-group col-md-12">
+                <input id="submitButton" type="submit" href="" class="btn btn-success" value="Return Home">
+              </div>
+            </form>
+            <br>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer id="main-footer" class="text-center p-4">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p>Copyright &copy;
-        </span> CSC 642-842 Summer <span id="year"></p>
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row row2">
+        <div class="col">
+          <p>Copyright &copy;
+          </span> CSC 642-842 Summer <span id="year"></p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-  crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-  crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 
-  <script>
-  // Get the current year for the copyright
-  $('#year').text(new Date().getFullYear());
+    <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
 
-  </script>
-</body>
+    </script>
+  </body>
 
-</html>
+  </html>

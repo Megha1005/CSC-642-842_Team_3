@@ -46,10 +46,15 @@ h1 {
 /*    padding-left: 270px;
     padding-top: 90px;*/
     align-content: center;
-    margin-left: 20%;
     color: white;
     font-family: "Bodoni MT" ;
     font-weight: bold;
+}
+.header-text {
+  align-content: center;
+  color: white;
+  font-family: "Bodoni MT" ;
+  font-weight: bold;
 }
 
 .container-fluid {
@@ -103,8 +108,16 @@ h1 {
 	color: white;
 }
 
-.row{
+.row {
+	padding-left: 50px;
+  padding-right: 50px;
+}
+.row2 {
 	padding-left: 50px;
 	background-color: #EBCCF0;
 }
 
+.required
+{
+    color: red;
+}

@@ -1,88 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html>
-    
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    </head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://www.google.com/recaptcha/api.js?data-expired-callback=expiredCheck" async defer></script>
-    <title>Sign Up</title>
-    
-    <body>
-        <div>
-            <a href="index.html">
-            <img src="images/logo.png" style="width: 150px; height: 150px; margin-left: 10px">
-            </a>
-            <h1 class="text-center"> Sign Up Page</h1>
-        </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Signup</title>
+</head>
 
-        <div class="container" style="width: 500px;">
-            <div class="row">
-                <div class="panel panel-primary">
-                    <div class="panel-heading text-center">
-                        Registration
+<body>
+  <!--- NAVBAR --->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="img-logo" src="images/logo.png"></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <h3 class="header header-text" style="align-content: center;">HCI Class SFSU CS Department Summer 2020</h3>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="btn btn-light m-1">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a href="about.html" class="nav-link">About Us</a> -->
+            <button type="button" class="btn btn-light m-1" data-toggle="modal" data-target="#aboutUsModal">About Us</button>
+            <div class="modal fade" id="aboutUsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true">
+              <div class="vertical-alignment-helper">
+                <div class="modal-dialog vertical-align-center" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center">
+                      <h5 class="modal-title" id="exampleModalLongTitle">About Us</h5>
                     </div>
-                    <div class="panel-secondary">
-                        Please fill out the following fields, * denotes a mandatory field.
+                    <div class="modal-body">
+                      <div>This static website was created by Team 3 as part of CSC 642-842 Summer 2020 Project.</div>
+                      <div>Team Members: Megha Babariya, Zhiming Wu, Mantasha Khan, Alex Gao, and Kevin Chan.</div>
                     </div>
-
-                    <div class="panel-body">
-                        <form action="verification.html" method="GET">
-                            <div class="form-group">
-                                <label id="username" for="usernameInput">
-                                    Username*:
-                                </label><br>
-                                <input type="text" name="usernameInput" maxlength="40"><br><br>
-                            </div>
-                            <div class="form-group">
-                                <label id="FullName" for="NameInput">
-                                    First and Last Name*:
-                                </label><br>
-                                <input type="text" name="NameInput" maxlength="40" ><br><br>
-                            </div>
-
-                            <div class="form-group">
-                                <label id="Email" for="EmailInput">
-                                    Email Address*:
-                                </label><br>
-                                <input type="email" name="EmailInput" maxlength="40"><br><br>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label id="confirmEmail" for="ConfirmEmailInput">
-                                    Confirm Email*:
-                                </label><br>
-                                <input type="email" name="ConfirmEmailInput" maxlength="40" ><br><br>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label id="password" for="passwordInput">
-                                    Password*:
-                                </label><br>
-                                <input type="password" name="passwordInput" maxlength="40" ><br><br>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label id="confirmEmail" for="ConfirmEmailInput">
-                                    Confirm Password*:
-                                </label><br>
-                                <input type="confirmEmail" name="ConfirmEmailInput" maxlength="40" /><br><br>
-                            </div>
-
-                            <br><br>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="checkBox" >
-                                <label class="form-check-label" for="checkBox"> I agree to the terms. </label>
-                            </div><br>
-                            
-                            <a id="submitButton" type="submit" href="index.html" class="btn btn-success" style="float:right">Sign Up</a>
-                        </form>
-
+                    <div class="modal-footer">
+                      &copy;Team 3 of CSC-642 Summer 2020
                     </div>
+                  </div>
                 </div>
-                <br><br>
+              </div>
             </div>
+          </li>
+
+          <li class="nav-item">
+            <!-- <a href="services.html" class="nav-link">Services</a> -->
+            <a href="ownerlogin.html">
+              <button type="button" class="btn btn-light m-1">For Restaurant Owners</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <button type="button" onclick="document.location='signup.html'" class="btn btn-light m-1">Sign up</button>
+          </li>
+          <li class="nav-item active">
+            <!-- <a href="contact.html" class="nav-link">Contact</a> -->
+            <button type="button" onclick="document.location='login.html'" class="btn btn-light m-1">Sign in</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="main" class="py-5">
+    <div class="container col-md-5" align="center">
+      <div class="row row2" style="padding-bottom:25px">
+        <div class="col-md-3"></div>
+        <div class="panel panel-primary col-md-6">
+          <div class="panel-heading text-center">
+            <h3>Sign Up</h3>
+          </div>
+          <div class="panel-secondary">
+
+          </div>
+          <div class="panel-body text-center" style="background:#F2F2F2">
+            <br><br>
+            <form action="index.html">
+              <div class="form-group row">
+                <div class="col-md-4">
+                  <label for="inputUsername" class="col-form-label"><h6>Username:</h6></label><span class="required">*</span>
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="inputUsername" name="inputUsername" placeholder="Enter your Username" maxlength="40" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-4">
+                  <label for="inputName" class="col-form-label"><h6>Full Name:</h6></label><span class="required">*</span>
+                </div>
+                <div class="col-md-8">
+                  <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter your full name" maxlength="40" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-4">
+                  <label for="inputEmail" class="col-form-label"><h6>Email:</h6></label><span class="required">*</span>
+                </div>
+                <div class="col-md-8">
+                  <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Enter Email" maxlength="40" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-4">
+                  <label for="confirmEmail" class="col-form-label"><h6>Confirm Email:</h6></label><span class="required">*</span>
+                </div>
+                <div class="col-md-8">
+                  <input type="email" class="form-control" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email" maxlength="40" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-4">
+                  <label for="inputPassword" class="col-form-label"><h6>Password:</h6></label><span class="required">*</span>
+                </div>
+                <div class="col-md-8">
+                  <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Enter your Password" maxlength="40" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-4">
+                  <label for="confirmPassword" class="col-form-label"><h6>Confirm Password:</h6></label><span class="required">*</span>
+                </div>
+                <div class="col-md-8">
+                  <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your Password" maxlength="40" required>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <br>
+              <input id="submitButton" type="submit" href="" class="btn btn-success" value="Sign Up" style="float:center; width: 75px">
+            </form>
+            <br>
+            <a id="signupButton" type="button" href="signup.html" class="btn btn-primary">New to GatorGrub? Sign up here!</a>
+            <br><br>
+          </div>
         </div>
-    </body>
-</html>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row row2">
+        <div class="col">
+          <p>Copyright &copy;
+          </span> CSC 642-842 Summer <span id="year"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+    <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    </script>
+  </body>
+
+  </html>
