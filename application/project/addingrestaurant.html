@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Adding Restaurant
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        <br>
+        
+        <p style="float:right; padding-right: 10px; font-size:25px">
+            ~Hi, Miguel!
+            <br>
+            <a class="btn btn-success btn-sm" href="index.html" style="float:right">
+                Logout
+            </a>
+        </p>
+        <br>
+        <a href="venderhome.html">
+            <img src="images/logo.png" style="width: 150px; height: 150px; margin-left: 10px">
+        </a>
+        <div class="container" style="padding-top: 25px; width: 65%; height: 75%;">
+            <div class="row">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        Adding a Restaurant to Your Account
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>
+                                Restaurant Name:
+                            </label>
+                            <input type="text" style="margin-left: 100px;">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Website:
+                            </label>
+                            <input type="text" style="margin-left: 160px">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Full Restaurant Address:
+                            </label>
+                            <input type="text" style="margin-left: 50px">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Cuisine Type:
+                            </label>
+                            <input type="text" style="margin-left: 125px">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Distance to SFSU: <input type="text" style="width:10%"> miles
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time to SFSU: <input type="text" style="width: 10%"> minutes
+                            </label>
+                        </div>
+                        <!--Modal Window Button-->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Add Menu</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true">
+                          <div class="vertical-alignment-helper"> 
+                              <div class="modal-dialog vertical-align-center" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Adding a Menu Item</h5>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container" style="text-align: center">
+                                        <img src="images/Add%20a%20Menu%20Item.PNG" style="width:75%; height:75%">
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <style>
+                            
+                            .vertical-alignment-helper {
+                                display:table;
+                                height: 100%;
+                                width: 75%;
+                                margin-left: 12%;
+                                pointer-events:none;}
+
+                                .vertical-align-center {
+                                /* To center vertically */
+                                display: table-cell;
+                                vertical-align: middle;
+                                pointer-events:none;}
+                        </style>
+                        
+                        <div class="form-group" style="overflow:hidden; border: solid; border-width:1px; margin-top:10px; background-color: lightyellow">
+                            <label>
+                                COVID-19 Safety Tag:
+                            </label>
+                            <label>
+                                The purpose of the safety tag is to let customers know what safety precautions your store is taking.
+                            </label>
+                            <div class="form-check">
+                                <input type="checkbox">
+                                <label>Masks and Gloves</label>
+                                <br>
+                                <input type="checkbox">
+                                <label>Temperature Checks</label>
+                                <br>
+                                <input type="checkbox">
+                                <label>All Employees Tested Negative</label>
+                                <br>
+                                <input type="checkbox">
+                                <label>Other: </label>
+                                <input type="text">
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <a  href="miguelsbakery.html" class="btn btn-success" style="float: right; margin-left: 10px">Save</a>
+                        <a href="venderhome.html" class="btn btn-danger" style="float: right">Cancel</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+    
+</html>
